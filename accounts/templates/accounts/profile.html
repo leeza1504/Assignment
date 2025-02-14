@@ -1,0 +1,24 @@
+<h2>Profile</h2>
+<div class="profile-info">
+    <p>Welcome, {{ user.email }}!</p>
+    <a href="{% url 'create_request' %}" class="btn">Create Service Request</a>
+</div>
+<style>
+    .profile-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .btn {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .btn:hover {
+        background-color: #45a049;
+    }
+</style>

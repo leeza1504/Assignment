@@ -1,0 +1,8 @@
+<h2>Customer Support Dashboard</h2>
+<ul>
+    {% for request in all_requests %}
+        <li>
+            <a href="{% url 'manage_request' request.id %}">{{ request.request_type.name }} - {{ request.status }}</a>
+        </li>
+    {% endfor %}
+</ul>

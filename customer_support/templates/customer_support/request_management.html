@@ -1,0 +1,33 @@
+<h2>Manage Request</h2>
+<form method="post" class="request-form">
+    {% csrf_token %}
+    <label for="status">Update Request Status:</label>
+    <select name="status" id="status">
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Resolved">Resolved</option>
+    </select>
+    <button type="submit" class="btn">Update Status</button>
+</form>
+<style>
+    .request-form {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+    .btn {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .btn:hover {
+        background-color: #45a049;
+    }
+</style>

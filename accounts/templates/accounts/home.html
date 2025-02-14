@@ -1,0 +1,23 @@
+<h1>Welcome to the Gas Utility App</h1>
+<div class="welcome-message">
+    <p>Please <a href="{% url 'register' %}" class="btn">register</a> or <a href="{% url 'login' %}" class="btn">login</a> to continue.</p>
+</div>
+<style>
+    .welcome-message {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .btn {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .btn:hover {
+        background-color: #45a049;
+    }
+</style>

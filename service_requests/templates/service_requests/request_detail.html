@@ -1,0 +1,16 @@
+<h2>Request Details</h2>
+<div class="request-details">
+    <p><strong>Type:</strong> {{ service_request.request_type.name }}</p>
+    <p><strong>Description:</strong> {{ service_request.description }}</p>
+    <p><strong>Status:</strong> {{ service_request.status }}</p>
+</div>
+<style>
+    .request-details {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+</style>

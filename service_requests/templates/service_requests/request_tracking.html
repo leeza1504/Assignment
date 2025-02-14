@@ -1,0 +1,28 @@
+<h2>Your Service Requests</h2>
+<ul class="request-list">
+    {% for request in user_requests %}
+        <li>
+            <a href="{% url 'request_detail' request.id %}">{{ request.request_type.name }} - {{ request.status }}</a>
+        </li>
+    {% endfor %}
+</ul>
+<style>
+    .request-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .request-list li {
+        margin: 10px 0;
+    }
+    .request-list a {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+    }
+    .request-list a:hover {
+        background-color: #45a049;
+    }
+</style>
